@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — See & Get</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-title">Contact</div>
+  <div class="loader-sub">See & Get — Reach Us</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">See<span>&</span>Get</a>
+  <ul class="nav-links">
+    <li><a href="library.html">Library</a></li>
+    <li><a href="art.html">Art</a></li>
+    <li><a href="index.html#featured">Featured</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-eyebrow">Get in Touch</div>
+  <h1 class="page-hero-title">Contact <em>Us</em></h1>
+  <p class="page-hero-desc">Have a question, a suggestion, or simply want to talk about books and art? We would love to hear from you.</p>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="section-inner">
+    <div class="contact-grid reveal">
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <div class="section-eyebrow">Reach Out</div>
+        <h3>We'd Love to<br><em style="color:var(--rust);">Hear From You</em></h3>
+        <p>Whether you're looking for a reading recommendation, want to suggest an artist we should feature, or simply want to share what a book meant to you — our doors are open.</p>
+        <ul class="contact-details">
+          <li>
+            <span class="contact-icon">📍</span>
+            <div class="contact-detail-text">
+              <strong>Location</strong>
+              <span>12 Rue des Artistes, Cultural Quarter</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon">✉️</span>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <span>hello@seeandget.art</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon">📞</span>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <span>+1 (800) SEE-GET-1</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon">🕐</span>
+            <div class="contact-detail-text">
+              <strong>Hours</strong>
+              <span>Mon–Sat, 9am – 9pm · Sun, 11am – 6pm</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form">
+        <div class="section-eyebrow" style="margin-bottom:1.5rem;">Send a Message</div>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="firstName">First Name</label>
+              <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lastName">Last Name</label>
+              <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <select class="form-select form-input" id="subject" name="subject">
+              <option value="">Select a subject…</option>
+              <option value="book">Book Recommendation</option>
+              <option value="art">Art & Gallery</option>
+              <option value="membership">Membership</option>
+              <option value="event">Events & Programs</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+          <div class="success-msg" id="successMsg">
+            ✓ &nbsp; Message successfully sent! We'll be in touch soon.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE BANNER -->
+<div class="quote-banner">
+  <p class="quote-text">"Not all those who wander are lost."</p>
+  <span class="quote-author">— J.R.R. Tolkien</span>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">See<span>&</span>Get</div>
+        <p class="footer-brand-desc">A cultural commons dedicated to the preservation and celebration of literature, fine art, music, and photography.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Library</div>
+        <ul class="footer-links">
+          <li><a href="library.html">Fiction</a></li>
+          <li><a href="library.html">Philosophy</a></li>
+          <li><a href="library.html">History</a></li>
+          <li><a href="library.html">Science</a></li>
+          <li><a href="library.html">Poetry</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Art Gallery</div>
+        <ul class="footer-links">
+          <li><a href="art.html">Paintings</a></li>
+          <li><a href="art.html">Music</a></li>
+          <li><a href="art.html">Photography</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Discover</div>
+        <ul class="footer-links">
+          <li><a href="index.html#featured">Featured</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2024 See & Get — Library & Art House. All rights reserved.</span>
+      <span class="footer-ornament">❧</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
